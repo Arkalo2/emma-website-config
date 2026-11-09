@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "identity": {
+    "displayName": "Camille Exemple",
+    "firstName": "Camille",
+    "lastName": "EXEMPLE",
+    "subtitle": "Designer d'expérience utilisateur",
+    "badge": "Designer UX"
+  },
+  "footer": {
+    "text": "© 2025 Camille Exemple. Site de démonstration.",
+    "linkLabel": "Pages CMS",
+    "linkUrl": "https://pagescms.org/"
+  },
+  "home": {
+    "pageTitle": "Camille EXEMPLE | Designer UX",
+    "greeting": "Bonjour,",
+    "intro": "Moi c'est",
+    "text": "Titulaire d'un Master en design d'interaction, je m'intéresse à la conception de produits numériques simples, accessibles et agréables à utiliser."
+  },
+  "about": {
+    "pageTitle": "À propos | Camille Exemple",
+    "greeting": "HELLO,",
+    "intro": "Moi c'est",
+    "text": "Durant mon temps libre, je fais de la **musique**, je joue du **piano** et de la **flûte**.\n\nJe suis aussi passionné·e de **photographie** et de **randonnée**.\n\nJe suis plutôt créatif·ve. C'est pour ça que le **design** me plaît : j'aime **créer quelque chose de nouveau, adapté à chacun·e.**"
+  },
+  "experiences": {
+    "pageTitle": "Expérience | Camille Exemple",
+    "title": "Expérience professionnelle",
+    "items": [
+      {
+        "position": "Designer UX",
+        "company": "Entreprise Exemple",
+        "place": "Ville Exemple, France",
+        "start": "Janv. 2024",
+        "end": "à présent",
+        "description": "Conception d'interfaces pour des **applications web** :\n\n- Ateliers de co-conception avec les utilisateurs\n- Tests utilisateurs et analyse des résultats\n- Création de maquettes et de prototypes\n- Rédaction de guides de bonnes pratiques"
+      },
+      {
+        "position": "Designer UX Junior (Stage)",
+        "company": "Société Démo",
+        "place": "Ville Démo, France",
+        "start": "Mars 2023",
+        "end": "Août 2023",
+        "description": "Participation à l'amélioration d'une **application mobile** :\n\n- Entretiens avec les utilisateurs\n- Évaluation heuristique\n- Maquettage d'interface"
+      },
+      {
+        "position": "Assistant·e de recherche (Stage)",
+        "company": "Laboratoire Exemple",
+        "place": "Ville Exemple, France",
+        "start": "Févr. 2022",
+        "end": "Mai 2022",
+        "description": "Participation à un projet de recherche sur l'**utilisabilité** de services en ligne :\n\n- Passations de tests\n- Entretiens\n- Analyse statistique des résultats"
+      }
+    ]
+  },
+  "formations": {
+    "pageTitle": "Formation | Camille Exemple",
+    "title": "Formation",
+    "items": [
+      {
+        "school": "Université Exemple",
+        "degree": "Master de Design d'interaction",
+        "start": "Sept. 2021",
+        "end": "Juil. 2023",
+        "place": "Ville Exemple, France",
+        "description": "Parcours Conception d'interfaces :\n\n- Mémoire de première année : étude sur l'**accessibilité** des sites web.\n- Mémoire de deuxième année : analyse des méthodes de **tests utilisateurs**"
+      },
+      {
+        "school": "Université Exemple",
+        "degree": "Licence de Psychologie",
+        "start": "Sept. 2018",
+        "end": "Juin 2021",
+        "place": "Ville Exemple, France",
+        "description": "- Troisième année avec une **spécialité** en psychologie cognitive\n- Poursuite du cursus en Master"
+      },
+      {
+        "school": "Lycée Exemple",
+        "degree": "Baccalauréat scientifique",
+        "start": "Sept. 2015",
+        "end": "Juil. 2018",
+        "place": "Ville Exemple, France",
+        "description": "Niveau : Mention Bien\n\n- Option informatique\n- Création d'un quiz (HTML, CSS et JavaScript)"
+      }
+    ]
+  },
+  "skills": {
+    "knowHow": [
+      "Recueil de données",
+      "Entretiens",
+      "Évaluation experte",
+      "Observation",
+      "Ateliers de co-conception",
+      "Tests utilisateurs",
+      "Statistiques"
+    ],
+    "softSkills": [
+      "Autonome",
+      "Force de proposition",
+      "Dynamique",
+      "Rigoureux·se"
+    ],
+    "it": [
+      "Figma",
+      "Axure",
+      "Sketch",
+      "Photoshop",
+      "Lightroom"
+    ],
+    "languages": [
+      "Anglais [B1; B2]",
+      "Français : langue maternelle"
+    ]
+  },
+  "interests": "**Musique** : piano, flûte\n\n**Sports** : natation et course\n\nPassionné·e de photographie et de voyages",
+  "contact": {
+    "pageTitle": "Contact | Camille Exemple",
+    "title": "Contact",
+    "intro": "Vous avez une question ? N'hésitez pas à me contacter. Je vous répondrai dans les meilleurs délais.",
+    "phone": "XX XX XX XX XX",
+    "address": "Ville Exemple",
+    "email": "camille.exemple@example.com",
+    "linkedin": "Camille Exemple",
+    "licenseLabel": "Permis B",
+    "licenseValue": "Véhicule personnel"
+  },
+  "cv": {
+    "pageTitle": "CV | Camille Exemple",
+    "about": "Titulaire d'un Master en design d'interaction, j'ai acquis une expérience dans la conception et l'évaluation de l'expérience utilisateur, afin d'assurer l'adéquation entre les besoins des utilisateurs et les solutions proposées.",
+    "formations": [
+      {
+        "date": "2021 à 2023",
+        "title": "Master Design d'interaction",
+        "detail": "Parcours Conception d'interfaces"
+      },
+      {
+        "date": "2018 à 2021",
+        "title": "Licence Psychologie",
+        "detail": "*Université Exemple*"
+      },
+      {
+        "date": "Juil. 2018",
+        "title": "Baccalauréat scientifique",
+        "detail": "Mention Bien"
+      }
+    ],
+    "experiences": [
+      {
+        "date": "Janv. 2024 - …",
+        "title": "Designer UX | Entreprise Exemple",
+        "description": "Conception d'interfaces pour des applications web :\n\n- Ateliers de co-conception\n- Tests utilisateurs\n- Maquettes et prototypes"
+      },
+      {
+        "date": "Mars à août 2023",
+        "title": "Stage UX | Société Démo",
+        "description": "Amélioration d'une application mobile : entretiens utilisateurs, évaluation heuristique, maquettage d'interface"
+      },
+      {
+        "date": "Févr. à mai 2022",
+        "title": "Stage recherche | Laboratoire Exemple",
+        "description": "Participation à un projet de recherche sur l'utilisabilité *(passations, entretiens, statistiques)*"
+      }
+    ]
+  },
+  "media": {
+    "homeImage": "medias/home.png",
+    "aboutImage": "medias/about.jpg",
+    "photo": "medias/about.jpg",
+    "cv": "medias/cv-demo.pdf"
+  },
+  "appearance": {
+    "primaryColor": "#4e5fff",
+    "lineColor": "#1a2a6c",
+    "textColor": "#757575",
+    "headingColor": "#000000",
+    "font": "Montserrat"
+  },
+  "menu": [
+    {
+      "page": "home",
+      "label": "Accueil",
+      "visible": true
+    },
+    {
+      "page": "about",
+      "label": "À propos",
+      "visible": true
+    },
+    {
+      "page": "experience",
+      "label": "Expérience",
+      "visible": true
+    },
+    {
+      "page": "formation",
+      "label": "Formation",
+      "visible": true
+    },
+    {
+      "page": "cv",
+      "label": "CV",
+      "visible": true
+    },
+    {
+      "page": "contact",
+      "label": "Contact",
+      "visible": true
+    }
+  ]
+}

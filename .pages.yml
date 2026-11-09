@@ -1,0 +1,347 @@
+# Configuration Pages CMS du contenu du site.
+# Le nom `.pages.yml` est imposé par Pages CMS.
+# Documentation : https://pagescms.org/docs/configuration/
+
+media:
+  - name: medias
+    label: Médias (photos, CV)
+    input: medias
+    output: /medias
+    extensions: [jpg, jpeg, png, webp, pdf]
+
+content:
+  - name: site
+    label: Contenu du site
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: identity
+        label: Identité
+        type: object
+        fields:
+          - name: displayName
+            label: Nom affiché en haut du site
+            type: string
+          - name: firstName
+            label: Prénom
+            type: string
+          - name: lastName
+            label: Nom de famille
+            type: string
+          - name: subtitle
+            label: Sous-titre sous le nom
+            type: string
+            description: « Designer UX » par exemple.
+          - name: badge
+            label: Titre court (badge)
+            type: string
+
+      - name: footer
+        label: Bas de page
+        type: object
+        fields:
+          - name: text
+            label: Texte
+            type: string
+          - name: linkLabel
+            label: Texte du lien
+            type: string
+          - name: linkUrl
+            label: Adresse du lien
+            type: string
+            description: Doit commencer par https://
+
+      - name: home
+        label: Accueil
+        type: object
+        fields:
+          - name: pageTitle
+            label: Titre de l'onglet du navigateur
+            type: string
+          - name: greeting
+            label: Salutation (ex. « Bonjour, »)
+            type: string
+          - name: intro
+            label: Phrase avant le nom (ex. « Moi c'est »)
+            type: string
+          - name: text
+            label: Texte
+            type: rich-text
+            description: Pour mettre un mot en gras, sélectionnez-le puis cliquez sur « B ».
+            options:
+              format: markdown
+
+      - name: about
+        label: À propos
+        type: object
+        fields:
+          - name: pageTitle
+            label: Titre de l'onglet du navigateur
+            type: string
+          - name: greeting
+            label: Salutation (ex. « Bonjour, »)
+            type: string
+          - name: intro
+            label: Phrase avant le nom (ex. « Moi c'est »)
+            type: string
+          - name: text
+            label: Texte
+            type: rich-text
+            description: Pour mettre un mot en gras, sélectionnez-le puis cliquez sur « B ».
+            options:
+              format: markdown
+
+      - name: experiences
+        label: Expériences
+        type: object
+        fields:
+          - name: pageTitle
+            label: Titre de l'onglet du navigateur
+            type: string
+          - name: title
+            label: Titre de la page
+            type: string
+          - name: items
+            label: Liste des expériences
+            type: object
+            list: true
+            fields:
+              - name: position
+                label: Poste
+                type: string
+              - name: company
+                label: Entreprise
+                type: string
+              - name: place
+                label: Lieu
+                type: string
+              - name: start
+                label: Date de début
+                type: string
+                description: Par exemple « Nov. 2023 ».
+              - name: end
+                label: Date de fin
+                type: string
+                description: Par exemple « Sept. 2023 », ou « à présent ».
+              - name: description
+                label: Description
+                type: rich-text
+                options:
+                  format: markdown
+
+      - name: formations
+        label: Formations
+        type: object
+        fields:
+          - name: pageTitle
+            label: Titre de l'onglet du navigateur
+            type: string
+          - name: title
+            label: Titre de la page
+            type: string
+          - name: items
+            label: Liste des formations
+            type: object
+            list: true
+            fields:
+              - name: school
+                label: Établissement
+                type: string
+              - name: degree
+                label: Diplôme
+                type: string
+              - name: start
+                label: Date de début
+                type: string
+              - name: end
+                label: Date de fin
+                type: string
+              - name: place
+                label: Lieu
+                type: string
+              - name: description
+                label: Description
+                type: rich-text
+                options:
+                  format: markdown
+
+      - name: skills
+        label: Compétences
+        type: object
+        fields:
+          - name: knowHow
+            label: Savoir-faire
+            type: string
+            list: true
+          - name: softSkills
+            label: Savoir-être
+            type: string
+            list: true
+          - name: it
+            label: Informatique (logiciels)
+            type: string
+            list: true
+          - name: languages
+            label: Langues
+            type: string
+            list: true
+
+      - name: interests
+        label: Centres d'intérêts
+        type: rich-text
+        description: Un paragraphe par thème, avec le thème en gras.
+        options:
+          format: markdown
+
+      - name: contact
+        label: Contact (informations publiques)
+        type: object
+        description: Tout ce qui est écrit ici est visible par tout le monde.
+        fields:
+          - name: pageTitle
+            label: Titre de l'onglet du navigateur
+            type: string
+          - name: title
+            label: Titre de la page
+            type: string
+          - name: intro
+            label: Texte d'introduction
+            type: text
+          - name: phone
+            label: Téléphone
+            type: string
+            description: Public, ne mettez rien de privé.
+          - name: address
+            label: Ville
+            type: string
+            description: Une ville, jamais l'adresse exacte.
+          - name: email
+            label: Email
+            type: string
+          - name: linkedin
+            label: LinkedIn
+            type: string
+          - name: licenseLabel
+            label: Permis (intitulé)
+            type: string
+          - name: licenseValue
+            label: Permis (valeur)
+            type: string
+
+      - name: cv
+        label: Page CV
+        type: object
+        fields:
+          - name: pageTitle
+            label: Titre de l'onglet du navigateur
+            type: string
+          - name: about
+            label: Texte « À propos » du CV
+            type: text
+          - name: formations
+            label: Formations du CV
+            type: object
+            list: true
+            fields:
+              - name: date
+                label: Date
+                type: string
+              - name: title
+                label: Titre
+                type: string
+              - name: detail
+                label: Détail
+                type: text
+          - name: experiences
+            label: Expériences du CV
+            type: object
+            list: true
+            fields:
+              - name: date
+                label: Date
+                type: string
+              - name: title
+                label: Titre
+                type: string
+              - name: description
+                label: Description
+                type: rich-text
+                options:
+                  format: markdown
+
+      - name: media
+        label: Médias
+        type: object
+        fields:
+          - name: homeImage
+            label: Illustration de l'accueil
+            type: image
+            options:
+              media: medias
+          - name: aboutImage
+            label: Image de la page À propos
+            type: image
+            options:
+              media: medias
+          - name: photo
+            label: Photo
+            type: image
+            options:
+              media: medias
+          - name: cv
+            label: CV à télécharger (PDF)
+            type: file
+            options:
+              media: medias
+
+      - name: appearance
+        label: Apparence
+        type: object
+        fields:
+          - name: primaryColor
+            label: Couleur principale (bleu)
+            type: color
+          - name: lineColor
+            label: Couleur des lignes (bleu marine)
+            type: color
+          - name: textColor
+            label: Gris du texte
+            type: color
+          - name: headingColor
+            label: Couleur des titres
+            type: color
+          - name: font
+            label: Police de caractères
+            type: select
+            options:
+              values:
+                - { value: Montserrat, label: Montserrat }
+                - { value: Open Sans, label: Open Sans }
+                - { value: Lato, label: Lato }
+                - { value: Roboto, label: Roboto }
+                - { value: Poppins, label: Poppins }
+
+      - name: menu
+        label: Menu
+        type: object
+        list: true
+        description: Faites glisser les lignes pour changer l'ordre ; décochez « Affichée » pour masquer une page.
+        fields:
+          - name: page
+            label: Page
+            type: select
+            options:
+              values:
+                - { value: home, label: Accueil }
+                - { value: about, label: À propos }
+                - { value: experience, label: Expérience }
+                - { value: formation, label: Formation }
+                - { value: cv, label: CV }
+                - { value: contact, label: Contact }
+          - name: label
+            label: Texte affiché dans le menu
+            type: string
+          - name: visible
+            label: Affichée
+            type: boolean
